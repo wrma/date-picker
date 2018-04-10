@@ -6,85 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>date-picker</title>
-    <style>
-        .date-picker_wrap {
-            width: 250px;
-            border: 1px solid #cccccc;
-            padding: 10px;
-            margin-top: 10px;
-            display: flex;
-            border-radius: 5px;
-            flex-direction: column;
-            position: relative;
-        }
-        .date-picker_wrap:before{
-            content: '';
-            display: block;
-            position: absolute;
-            top: -21px;
-            left: 20px;
-            border-top: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-left: 10px solid transparent;
-            border-bottom: 10px solid #cccccc;
-        }
-        .date-picker_wrap:after{
-            content: '';
-            display: block;
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            border-top: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-left: 10px solid transparent;
-            border-bottom: 10px solid #ffffff;
-        }
-        .date-picker_wrap .date-picker_head{
-            margin-bottom: 10px;
-            padding: 5px;
-            display: flex;
-            justify-content: center;
-        }
-        .date-picker_wrap .date-picker_head select{
-            width: 100px;
-            height: 30px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            margin-right: 5px;
-        }
-        .date-picker_wrap .date-picker_body{
-            width: 100%;
-        }
-        .date-picker_wrap .date-picker_body table{
-            width: 100%;
-        }
-        .date-picker_wrap .date-picker_body table thead{
-            padding: 3px;
-            text-align: center;
-        }
-        .date-picker_wrap .date-picker_body table tbody{
-            padding: 3px;
-            text-align: center;
-        }
-        .date-picker_wrap .date-picker_body table tbody td{
-            height: 30px;
-            line-height: 20px;
-        }
-        .date-picker_wrap .date-picker_body table tbody td.old-day{
-            background: #eeeeee;
-            color: #aaaaaa;
-        }
-        .date-picker_wrap .date-picker_body table tbody td:hover{
-            background: lightblue;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
-    <input type="text" class="my-date-picker"/>
-    <div id="wrap"></div>
+    <div class="wrap"></div>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
+    <p>wrma</p>
 </body>
 </html>
 <script src="./index.js"></script>
 <script>
+    var datepicker = new DatePicker({
+        container : document.querySelector('.wrap')
+    });
 </script>
