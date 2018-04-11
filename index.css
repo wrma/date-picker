@@ -57,6 +57,7 @@
     border: 1px solid #cccccc;
     border-radius: 5px;
     margin-right: 5px;
+    outline: none;
 }
 .date-picker_wrap .date-picker_body{
     width: 100%;
@@ -76,13 +77,18 @@
 .date-picker_wrap .date-picker_body table tbody td{
     height: 30px;
     line-height: 20px;
-    border: 1px solid #ffffff;
+    border-radius: 2px;
+}
+.date-picker_wrap .date-picker_body table tbody td.today{
+    border: 1px solid lightskyblue;
+    margin-left: -10px;
 }
 .date-picker_wrap .date-picker_body table tbody td.old-day,
 .date-picker_wrap .date-picker_body table tbody td.old-day:hover{
     background: #eeeeee;
     color: #aaaaaa;
     cursor: default;
+    border: 1px solid #ffffff;
 }
 .date-picker_wrap .date-picker_body table tbody td:hover{
     background: lightblue;
